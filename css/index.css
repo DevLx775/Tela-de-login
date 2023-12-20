@@ -1,0 +1,113 @@
+    @import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'K2D', sans-serif;
+        background: #f2f2f2;
+        width: 100%;
+        height: 100vh;
+    }
+    body main.conteudo-principal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body main.conteudo-principal section.sessao-login{
+        background-color: #ffff;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+    }
+    body main.conteudo-principal section.sessao-login div.container-img-mario{
+        position: absolute;
+    }
+    body main.conteudo-principal section.sessao-login div.container-img-mario img{
+        user-select: none;
+        filter: drop-shadow( 30px 3px 5px black);
+        width: 150px;
+        position: absolute;
+        bottom: 200px;
+        left: 170px;
+        animation: marioAnim infinite 0.9s ease-in-out;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login * {
+        margin: 5px;
+        padding: 5px;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login h1{
+        font-size: 20pt;
+        font-weight: 300;
+        border-bottom: 1px solid #000;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login h2{
+        font-weight: 400;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login div.container-user{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login div.container-user span > i{
+        color: rgba(80, 80, 80, 0.5);
+        font-size: 20pt;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login div.container-user input{
+        font-family: 'K2D', sans-serif;
+        font-weight: 300;
+        outline: none;
+        border: none;
+        height: 4vh;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login div.container-password span > i{
+        font-size: 20pt;
+        color: rgba(80, 80, 80, 0.5);
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login div.container-password input{
+        font-family: 'K2D', sans-serif;
+        font-weight: 3500;
+        outline: none;
+        border: none;
+        height: 4vh;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login div.container-password{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+    body main.conteudo-principal section.sessao-login form.formulario-login div.container-button-submit button{
+        font-size: 10pt;
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 100%;
+        height: 4vh;
+        border: 1px solid black;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px;
+    }
+
+    /* Animacao do mario */
+    @keyframes marioAnim {
+        to 0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }

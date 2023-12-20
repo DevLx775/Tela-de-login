@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AprendizadoDev | Login</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/8ee4da978b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main class="conteudo-principal">
+      <section class="sessao-login">
+        <div class="container-img-mario">
+          <img
+            src="./img/mario-transparent-flying-2-removebg-preview.png"
+            draggable="false"
+          />
+        </div>
+        <form
+          action="http://localhost:3000/metodos/processandoDados.php"
+          class="formulario-login"
+          method="POST"
+        >
+          <h1 class="title-form">Welcome</h1>
+          <h2 class="sub-titile-form">System V1</h2>
+          <div class="container-user">
+            <span class="icone-user"><i class="fa-solid fa-user"></i></span>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              autocomplete="off"
+              minlength="4"
+              maxlength="32"
+              required
+            />
+          </div>
+          <div class="container-password">
+            <span class="icon-lock"><i class="fa-solid fa-lock"></i></span>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+              autocomplete="off"
+              minlength="4"
+              maxlength="32"
+              required
+            />
+          </div>
+          <div class="container-button-submit">
+            <button type="submit">Enter</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
